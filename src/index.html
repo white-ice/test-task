@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Hello Evano 👋🏼,"
+})
+
+<body>
+	<div id="app" class="app">
+		<div class="wrapper">
+			@@include('html/_sidebar.htm',{})
+			<main class="page">
+				<section class="section__clock">
+					<div class="clock__container clock">
+						<div class="clock__time time">
+							<div class="time__hours">
+								<span id="hours"></span>
+							</div>
+							<div class="time__minutes">
+								<span id="minutes"></span>
+							</div>
+							<div class="time__seconds">
+								<span id="seconds"></span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
