@@ -23,3 +23,14 @@ import { flsModules } from "./modules.js";
 // }
 
 // const interval = setInterval(clock, 1000);
+
+export function toggleSidebar() {
+	if (document.querySelector('.burger-btn')) {
+		document.addEventListener("click", function (e) {
+			if (e.target.closest('.burger-btn')) {
+				e.target.closest('.burger-btn').classList.toggle('active');
+				document.querySelector('body').classList.toggle('sidebar__show')
+			}
+		});
+	}
+}

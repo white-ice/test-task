@@ -1,0 +1,141 @@
+.table {
+	vertical-align: top;
+	border-collapse: collapse;
+	width: 100%;
+
+	&__responsive {
+		overflow-x: auto;
+		overflow-y: hidden;
+	}
+
+	thead {
+		border: 1px solid var(--white-color) !important;
+	}
+
+	thead,
+	tbody {
+		// tr {
+		// 	&::before {
+		// 		content: '';
+		// 		display: block;
+		// 		width: rem(38);
+		// 	}
+		// }
+	}
+
+	tbody {
+		// tr {
+		// 	&::before {
+		// 		content: '';
+		// 		display: block;
+		// 		width: rem(38);
+		// 		border-bottom: 1px solid var(--border-color-secondary);
+		// 	}
+		// }
+	}
+
+
+
+	th {
+		background-color: transparent;
+		color: var(--text-light-color);
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: -0.14px;
+		padding: rem(14) rem(10);
+		text-align: left;
+		border-bottom: 1px solid var(--border-color-secondary);
+
+		&:first-child {
+			padding-left: rem(24);
+
+			&+th {
+				padding-left: 0;
+			}
+		}
+
+		&:last-child {
+			padding-right: rem(24);
+		}
+
+	}
+
+	td {
+		border-bottom: rem(1) solid var(--border-color-secondary);
+		color: var(--text-dark-color);
+		font-size: rem(14);
+		line-height: math.div(20, 14);
+		padding: rem(20) rem(10);
+
+		&.td-green {
+			color: var(--primary-color);
+		}
+
+		&.td-red {
+			color: var(--primary-color);
+		}
+
+		&:last-child {
+			.btn-group {
+				justify-content: flex-end;
+			}
+		}
+
+		&:first-child,
+		&:last-child {
+			border: 0 none;
+
+
+		}
+
+		&:first-child+td {
+			padding-left: 0;
+		}
+	}
+
+	&__pagination {
+		padding-top: rem(40) !important;
+
+		@include media-breakpoint-down(md) {
+			justify-content: center !important;
+		}
+	}
+}
+
+.td-uppercase {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	column-gap: rem(8);
+	text-transform: uppercase;
+}
+
+.btn {
+	display: inline-flex;
+	padding: 4px 12px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: -0.14px;
+	min-width: 80px;
+
+	// .btn__active
+
+	&__active {
+		border-radius: 4px;
+		border: 1px solid #00B087;
+		background: rgba(22, 192, 152, 0.38);
+		color: #008767;
+
+	}
+
+	// .btn__inactive
+	&__inactive {
+		border-radius: 4px;
+		border: 1px solid #DF0404;
+		background: #FFC5C5;
+		color: #DF0404;
+	}
+}

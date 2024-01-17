@@ -1,36 +1,60 @@
 <div class="sidebar">
-	<div class="sidebar__brand">
-
+	<div class="sidebar__brand brand">
+		<a class="brand__link" href="/" alt="Dashboard">
+			<img src="@img/logo.svg" alt="Dashboard">
+			<span class="brand__name">Dashboard</span>
+			<span class="brand__version">v.01</span>
+		</a>
 	</div>
-	<nav class="sidebar__navbar">
-		<menu>
-			<li>
-				<i class="icon"></i>
-				<a href="/">Dashboard</a>
+	<nav class="sidebar__navbar navbar">
+		<menu class="navbar__items">
+			<li class="navbar__item">
+				<a class="navbar__link" href="/">
+					<i class="icon-dashboard"></i>
+					Dashboard
+				</a>
 			</li>
-			<li>
-				<i class="icon"></i>
-				<a href="/">Product</a>
+			<li class="navbar__item">
+				<a class="navbar__btn" href="/">
+					<i class="icon-product"></i>
+					Product
+				</a>
 			</li>
-			<li>
-				<i class="icon"></i>
-				<a href="/">Customers</a>
+			<li class="navbar__item">
+				<a class="navbar__btn active" href="/">
+					<i class="icon-customers"></i>
+					Customers
+				</a>
 			</li>
-			<li>
-				<i class="icon"></i>
-				<a href="/">Income</a>
+			<li class="navbar__item">
+				<a class="navbar__btn" href="/">
+					<i class="icon-income"></i>
+					Income
+				</a>
 			</li>
-			<li>
-				<i class="icon"></i>
-				<a href="/">Promote</a>
+			<li class="navbar__item">
+				<a class="navbar__btn" href="/">
+					<i class="icon-promote"></i>
+					Promote
+				</a>
 			</li>
-			<li>
-				<i class="icon"></i>
-				<a href="/">Help</a>
+			<li class="navbar__item">
+				<a class="navbar__btn" href="/">
+					<i class="icon-help"></i>
+					Help
+				</a>
 			</li>
 		</menu>
 	</nav>
 	<div class="sidebar__footer">
-
+		<div class="user">
+			<div class="user__avatar img-ibg">
+				<img src="@img/user.png" alt="Evano">
+			</div>
+			<div class="user__data">
+				<span class="user__name">Evano</span>
+				<span class="user__position">Project Manager</span>
+			</div>
+		</div>
 	</div>
 </div>

@@ -1,14 +1,102 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{
-"title":"Hello Evano 👋🏼,"
-})
+
+<head>
+	<title>Hello Evano 👋🏼,</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240117102134">
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600&family=Space+Grotesk:wght@500&display=swap&_v=20240117102134"
+		rel="stylesheet"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
 <body>
 	<div id="app" class="app">
 		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			@@include('html/_sidebar.htm',{})
+			<header class="header">
+				<div class="header__container">
+					<nav class="header__navbar">
+						<div class="burger-btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="brand">
+							<a class="brand__link" href="/" alt="Dashboard">
+								<img src="img/logo.svg" alt="Dashboard">
+								<span class="brand__name">Dashboard</span>
+								<span class="brand__version">v.01</span>
+							</a>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<div class="sidebar">
+				<div class="sidebar__brand brand">
+					<a class="brand__link" href="/" alt="Dashboard">
+						<img src="img/logo.svg" alt="Dashboard">
+						<span class="brand__name">Dashboard</span>
+						<span class="brand__version">v.01</span>
+					</a>
+				</div>
+				<nav class="sidebar__navbar navbar">
+					<menu class="navbar__items">
+						<li class="navbar__item">
+							<a class="navbar__link" href="/">
+								<i class="icon-dashboard"></i>
+								Dashboard
+							</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__btn" href="/">
+								<i class="icon-product"></i>
+								Product
+							</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__btn active" href="/">
+								<i class="icon-customers"></i>
+								Customers
+							</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__btn" href="/">
+								<i class="icon-income"></i>
+								Income
+							</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__btn" href="/">
+								<i class="icon-promote"></i>
+								Promote
+							</a>
+						</li>
+						<li class="navbar__item">
+							<a class="navbar__btn" href="/">
+								<i class="icon-help"></i>
+								Help
+							</a>
+						</li>
+					</menu>
+				</nav>
+				<div class="sidebar__footer">
+					<div class="user">
+						<div class="user__avatar img-ibg">
+							<picture><source srcset="img/user.webp" type="image/webp"><img src="img/user.png" alt="Evano"></picture>
+						</div>
+						<div class="user__data">
+							<span class="user__name">Evano</span>
+							<span class="user__position">Project Manager</span>
+						</div>
+					</div>
+				</div>
+			</div>
 			<main class="page">
 				<div class="page__header">
 					<h1 class="page__title">Hello Evano 👋🏼,</h1>
@@ -120,7 +208,7 @@
 							</div>
 						</div>
 						<div class="panel__footer footer">
-							
+
 							<div class="pagination">
 								<div class="pagination__text">
 									Showing data 1 to 8 of 256K entries
@@ -162,7 +250,7 @@
 			</main>
 		</div>
 	</div>
-	@@include('html/_js.htm',{})
+	<script src="js/app.min.js?_v=20240117102134"></script>
 </body>
 
 </html>
